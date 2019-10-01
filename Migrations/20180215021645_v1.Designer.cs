@@ -5,10 +5,10 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.EntityFrameworkCore.Storage.Internal;
-using ProductCatalog.Data;
+using ESX.Data;
 using System;
 
-namespace ProductCatalog.Migrations
+namespace ESX.Migrations
 {
     [DbContext(typeof(StoreDataContext))]
     [Migration("20180215021645_v1")]
@@ -21,7 +21,7 @@ namespace ProductCatalog.Migrations
                 .HasAnnotation("ProductVersion", "2.0.1-rtm-125")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("ProductCatalog.Models.Category", b =>
+            modelBuilder.Entity("ESX.Models.Category", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
@@ -36,7 +36,7 @@ namespace ProductCatalog.Migrations
                     b.ToTable("Category");
                 });
 
-            modelBuilder.Entity("ProductCatalog.Models.Product", b =>
+            modelBuilder.Entity("ESX.Models.Product", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
@@ -74,9 +74,9 @@ namespace ProductCatalog.Migrations
                     b.ToTable("Product");
                 });
 
-            modelBuilder.Entity("ProductCatalog.Models.Product", b =>
+            modelBuilder.Entity("ESX.Models.Product", b =>
                 {
-                    b.HasOne("ProductCatalog.Models.Category", "Category")
+                    b.HasOne("ESX.Models.Category", "Category")
                         .WithMany("Products")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade);

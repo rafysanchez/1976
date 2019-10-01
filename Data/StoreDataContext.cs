@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using ProductCatalog.Data.Maps;
-using ProductCatalog.Models;
+using ESX.Data.Maps;
+using ESX.Models;
 
-namespace ProductCatalog.Data
+namespace ESX.Data
 {
     public class StoreDataContext : DbContext
     {
@@ -11,7 +11,9 @@ namespace ProductCatalog.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=localhost,1433;Database=prodcat;User ID=SA;Password=1q2w3e%&!");
+            var conn = @"Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=ESX;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+
+            optionsBuilder.UseSqlServer(conn);
         }
 
         protected override void OnModelCreating(ModelBuilder builder)

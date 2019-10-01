@@ -2,10 +2,10 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using ProductCatalog.Data;
-using ProductCatalog.Repositories;
+using ESX.Data;
+using ESX.Repositories;
 
-namespace ProductCatalog
+namespace ESX
 {
     public class Startup
     {

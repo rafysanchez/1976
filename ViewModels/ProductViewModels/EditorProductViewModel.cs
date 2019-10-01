@@ -1,7 +1,7 @@
 using Flunt.Notifications;
 using Flunt.Validations;
 
-namespace ProductCatalog.ViewModels.ProductViewModels
+namespace ESX.ViewModels.ProductViewModels
 {
     public class EditorProductViewModel : Notifiable, IValidatable
     {

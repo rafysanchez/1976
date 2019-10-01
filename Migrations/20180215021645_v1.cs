@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace ProductCatalog.Migrations
+namespace ESX.Migrations
 {
     public partial class v1 : Migration
     {

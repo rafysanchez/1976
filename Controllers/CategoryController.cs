@@ -2,10 +2,10 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ProductCatalog.Data;
-using ProductCatalog.Models;
+using ESX.Data;
+using ESX.Models;
 
-namespace ProductCatalog.Controllers
+namespace ESX.Controllers
 {
     public class CategoryController : Controller
     {

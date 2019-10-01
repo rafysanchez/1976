@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using ProductCatalog.Models;
-using ProductCatalog.Repositories;
-using ProductCatalog.ViewModels.ProductViewModels;
+using ESX.Models;
+using ESX.Repositories;
+using ESX.ViewModels.ProductViewModels;
 
-namespace ProductCatalog.Controllers
+namespace ESX.Controllers
 {
     public class ProductController : Controller
     {

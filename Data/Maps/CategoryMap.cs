@@ -1,9 +1,9 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using ProductCatalog.Models;
+using ESX.Models;
 
-namespace ProductCatalog.Data.Maps
+namespace ESX.Data.Maps
 {
     public class CategoryMap: IEntityTypeConfiguration<Category>
     {

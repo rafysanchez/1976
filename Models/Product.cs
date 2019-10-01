@@ -1,6 +1,6 @@
 using System;
 
-namespace ProductCatalog.Models
+namespace ESX.Models
 {
     public class Product
     {

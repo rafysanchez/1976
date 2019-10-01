@@ -1,4 +1,4 @@
-namespace ProductCatalog.ViewModels.ProductViewModels
+namespace ESX.ViewModels.ProductViewModels
 {
     public class ResultViewModel
     {
